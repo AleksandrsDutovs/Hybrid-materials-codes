@@ -1,4 +1,5 @@
-function Wrangel2(datfilename) #name of function is dedicated to baron Pyotr Wrangel
+function Wrangel2(datfilename) 	#this function is used for porous anodized alumina layer thickness determination using light electromagnetic wave transfer model in multilayer environment
+				#name of function is dedicated to baron Pyotr Wrangel
 
 lambda=[450:800];              # wavelength range in nm
 
