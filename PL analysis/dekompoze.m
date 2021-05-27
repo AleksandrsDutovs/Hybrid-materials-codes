@@ -1,4 +1,4 @@
-function dekompoze(datfilename,usec)
+function dekompoze(datfilename,usec)			#this function decomposes experimental spectra in Gaussian components
   pkg load optim;
   
   w=50;
