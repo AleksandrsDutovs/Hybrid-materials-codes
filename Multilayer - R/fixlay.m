@@ -1,4 +1,4 @@
-function R = fixlay (nm,p) 
+function R = fixlay (nm,p) 	# this is supportive function for PAAO layer thickness determination
 				# p(1) thickness of ZnO
 				# p(2) thickness of Al2O3
 				# p(3) barrier layer
