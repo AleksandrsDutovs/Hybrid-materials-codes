@@ -1,4 +1,5 @@
 pkg load optim; #The package needed for the least square fitting to work
+                #This script allows to interpretate spectral data obtained from measurments in PAAO synthesis process
 
 clear all #Clears all variables
 close all #Closes all windows
@@ -33,7 +34,7 @@ intensity_reference_interp=interp1(lambda,intensity_reference,lambda_range,'spli
 water_data=dlmread('Water.txt','\t'); #Loading the data for water from M. Daimon and A. Masumura.
                                       #Measurement of the refractive index of distilled water from the near-infrared region to the ultraviolet region,
                                       #Appl. Opt. 46, 3811-3820 (2007)
-                                      #High performance liquid chromatography (HPLC) distilled water at 19.0 °C.
+                                      #High performance liquid chromatography (HPLC) distilled water at 19.0 Â°C.
 lambda_water=water_data(:,1)*1000; #Wavelength values from Daimon data
 n_water=water_data(:,2); # Refractive index of water from Daimon data
 n_air=interp1(lambda_water,n_water,lambda_range,'spline'); #Refractive index data is recalculated for desired wavelength range
@@ -44,7 +45,7 @@ n_oxide=1.6*ones(lambda_size); #Refractive coefficient of oxide (=1.6), consider
 k_oxide=zeros(lambda_size); #Extinction coefficient of oxide (=0)
 nk_oxide=n_oxide+j*k_oxide; #Complex refractive index of oxide
 
-Al=load('AlRakic.dat'); #Loading the data for aluminum from A. D. Raki?, A. B. Djurišic, J. M. Elazar, and M. L. Majewski.
+Al=load('AlRakic.dat'); #Loading the data for aluminum from A. D. Raki?, A. B. DjuriÅ¡ic, J. M. Elazar, and M. L. Majewski.
                         #Optical properties of metallic films for vertical-cavity optoelectronic devices,
                         #http://dx.doi.org/10.1364/AO.37.005271\, Appl. Opt. 37, 5271-5283 (1998)
                         #Fit of the experimental data from several sources to Brendel-Bormann (BB) model
