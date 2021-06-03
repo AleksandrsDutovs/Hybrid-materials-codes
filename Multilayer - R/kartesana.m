@@ -2,7 +2,7 @@
 # 2. REFERENCE SPECTRUM FILE NAME MUST BE: ref_spektrs.txt
 # 3. SPECTRUM FILES MUST BE STARTING FROM: R00001.txt
 
-pkg load optim;
+pkg load optim; 		#Interpretatation of spectral data obtained from measurments in PAAO synthesis process
 
 # setting up variables
 steps = 19;                         # steps for 1 line
