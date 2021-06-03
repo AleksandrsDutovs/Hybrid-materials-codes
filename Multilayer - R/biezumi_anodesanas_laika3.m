@@ -3,7 +3,7 @@
 # 3. SPECTRUM FILES MUST BE STARTING FROM: R00001.txt
 close all;
 pkg load optim;
-
+					#Interpretatation of spectral data obtained from measurments in PAAO synthesis process
 # mainigo definesana
 lambda_s = 420;                     # gaismas diapazona sakums
 lambda_b = 800;                     # gaismas diapazona beigas
